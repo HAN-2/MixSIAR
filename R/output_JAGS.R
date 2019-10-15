@@ -245,7 +245,7 @@ if(!output_options[[3]]){   # if 'suppress posterior plots' is NOT checked
     print(ggplot2::ggplot(df, ggplot2::aes(x=x, fill=sources, colour=sources)) +
             ggplot2::geom_density(alpha=.3, ggplot2::aes(y=..scaled..)) +
             ggplot2::theme_bw() +
-            ggplot2::xlab("Proportion of Diet") +
+            ggplot2::xlab("Contribution") +
             ggplot2::ylab("Scaled Posterior Density") +
             ggplot2::xlim(0,1) +
             ggplot2::labs(title = my.title) +
